@@ -15,6 +15,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True)
 
 # Admins, Channels & Users
 
+
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
