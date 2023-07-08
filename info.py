@@ -23,10 +23,9 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 default_start_msg = """**Hi, I'm Media Search Bot or ypu can call me as Auto-Filter Bot**
 Here you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search.
 """
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True)
 START_MSG = environ.get('START_MSG', default_start_msg)
-
+CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "anime classroom")
 OMDB_API_KEY = '5a4e1d84'
 if FILE_CAPTION.strip() == "":
