@@ -14,14 +14,13 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True)
 
 # Admins, Channels & Users
-ADMINS = [6113550151]
 CHANNELS = [-1001927205991]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else auth_channel
 AUTH_GROUPS = [int(admin) for admin in environ.get("AUTH_GROUPS", "").split()]
-
+ADMINS = [6113550151]
 # MongoDB information
 DATABASE_URI = 'mongodb+srv://music:music@cluster0.6nwpwo2.mongodb.net/?retryWrites=true&w=majority'
 DATABASE_NAME = 'music'
