@@ -8,13 +8,6 @@ SESSION = environ.get('SESSION', 'Media_search')
 API_ID = 26331302
 API_HASH = '5d7bbff0c04b119735e4e14bdb402e69'
 BOT_TOKEN = '6201307785:AAG0gB_uqvs9_konxBuLouEH9fwvwIQdzsM'
-
-# Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
-USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True)
-
-# Admins, Channels & Users
-
 AUTH_USERS = []
 auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else auth_channel
@@ -25,6 +18,13 @@ CHANNELS = [-1001927205991]
 DATABASE_URI = 'mongodb+srv://music:music@cluster0.6nwpwo2.mongodb.net/?retryWrites=true&w=majority'
 DATABASE_NAME = 'music'
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+
+# Bot settings
+CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True)
+
+# Admins, Channels & Users
+
 
 # Messages
 default_start_msg = """
