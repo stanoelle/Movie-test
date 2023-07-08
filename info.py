@@ -22,11 +22,6 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True)
-
-# Admins, Channels & Users
-
-
-# Messages
 default_start_msg = """
 **Hi, I'm Media Search Bot or ypu can call me as Auto-Filter Bot**
 Here you can search files in Inline mode as well as PM, Use the below buttons to search files or send me the name of file to search.
@@ -43,3 +38,8 @@ if OMDB_API_KEY.strip() == "":
     API_KEY=None
 else:
     API_KEY=OMDB_API_KEY
+# Admins, Channels & Users
+
+
+# Messages
+
